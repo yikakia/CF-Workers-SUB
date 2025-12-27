@@ -447,7 +447,7 @@ async function getSUB(api, request, 追加UA, userAgentHeader) {
 async function getUrl(request, targetUrl, 追加UA, userAgentHeader) {
 	// 设置自定义 User-Agent
 	const newHeaders = new Headers(request.headers);
-	newHeaders.set("User-Agent", `${atob('djJyYXlOLzYuNDU=')} cmliu/CF-Workers-SUB ${追加UA}(${userAgentHeader})`);
+	newHeaders.set("User-Agent", `${atob('djJyYXlOLzYuNDU=')} clash-verge/v2.4.2 ${追加UA}(${userAgentHeader})`);
 
 	// 构建新的请求对象
 	const modifiedRequest = new Request(targetUrl, {
